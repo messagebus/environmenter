@@ -6,7 +6,7 @@ require 'environmenter/version'
 Gem::Specification.new do |spec|
   spec.name          = 'environmenter'
   spec.version       = Environmenter::VERSION
-  spec.authors       = ['Eric Saxby']
+  spec.authors       = ['Eric Saxby', 'Matt Camuto']
   spec.email         = ['sax@livinginthepast.org']
 
   spec.summary       = %q{Optionally load a Rails environment from other processes}
