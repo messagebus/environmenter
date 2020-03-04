@@ -1,9 +1,9 @@
-appraise 'rails-3' do
-  gem 'rails', '3.2.14', require: false
+appraise 'rails-6' do
+  gem 'rails', '6.0.2.1', require: false
 end
 
-appraise 'rails-4' do
-  gem 'rails', '4.2.5.1', require: false
+appraise 'rails-5' do
+  gem 'rails', '5.2.4.1', require: false
 end
 
 appraise 'rails-none' do

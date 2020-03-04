@@ -3,7 +3,7 @@ require 'environmenter/loader'
 
 RSpec.describe Environmenter::Loader, 'with rails' do
   before do
-    skip 'Skipping rails test in no-rails example' unless Bundler.environment.dependencies.any? { |d| d.name == 'rails' }
+    skip 'Skipping rails test in no-rails example' unless Bundler.load.dependencies.any? { |d| d.name == 'rails' }
   end
 
   describe '#load!' do
@@ -68,7 +68,7 @@ RSpec.describe Environmenter::Loader, 'without rails' do
   let(:config) { double }
 
   before do
-    skip 'Skipping no-rails test in rails example' if Bundler.environment.dependencies.any? { |d| d.name == 'rails' }
+    skip 'Skipping no-rails test in rails example' if Bundler.load.dependencies.any? { |d| d.name == 'rails' }
   end
 
   describe '#load!' do
